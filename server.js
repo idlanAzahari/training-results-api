@@ -37,7 +37,7 @@ const Results = mongoose.model("Results", ResultsSchema)
 
 
 
-app.get("/results/get", async(req, res) => {
+app.get("/", async(req, res) => {
     
     try {
         result = await Results.find({})
